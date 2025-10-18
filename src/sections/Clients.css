@@ -1,0 +1,139 @@
+.dark-mode {
+  background-color: black;
+}
+.light-mode {
+  background-color: transparent;
+}
+.client-dark {
+  background-color: black;
+}
+.client-light {
+  background-color: transparent;
+}
+.client-outer-container {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem 1.5rem;
+  gap: 5rem;
+}
+
+.clients-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.clients-title {
+  color: #dc2626;
+}
+.dark-mode .clients-title {
+  color: white;
+}
+.clients-heading {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.dark-mode .clients-heading {
+  color: white;
+}
+.client-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.inner-client-box {
+  background-color: white;
+  cursor: pointer;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+.inner-client-box:hover {
+  background-color: #fee2e2;
+}
+.dark-mode .inner-client-box {
+  background-color: #111827;
+}
+.client-images {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.inner-client-images {
+  width: 70px;
+  transition: transform 0.3s;
+}
+.inner-client-images:hover {
+  transform: scale(1.1);
+}
+.client-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+.client-name {
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 600;
+}
+.dark-mode .client-name {
+  color: white;
+}
+.client-text {
+  color: #475569;
+}
+.dark-mode .client-text {
+  color: white;
+}
+.client-feedback {
+  font-size: 1rem;
+  color: #475569;
+}
+.dark-mode .client-feedback {
+  color: white;
+}
+.outer-client-star {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+.inner-client-star {
+  font-size: 1rem;
+  color: #facc15;
+}
+
+@media (min-width: 1024px) {
+  .client-outer-container {
+    width: 95%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .client-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

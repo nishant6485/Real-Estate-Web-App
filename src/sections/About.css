@@ -1,0 +1,88 @@
+.about-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 2.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+.about-section.dark {
+  background-color: black;
+}
+.about-section.light {
+  background-color: transparent;
+}
+.about-img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.about-title {
+  color: #ef4444; /* red 500*/
+}
+.about-section.dark .about-title {
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.about-heading {
+  color: black;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 2.5rem;
+}
+.about-section.dark .about-heading {
+  color: white;
+}
+.about-paragraph {
+  font-size: 1.25rem;
+  color: gray;
+  text-align: justify;
+}
+.about-section.dark .about-paragraph {
+  color: white;
+}
+
+.about-btn {
+  background-color: #dc2626; /*red 600*/
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.about-btn:hover{
+  background-color: black;
+  transform: scale(1.1);
+}
+.dark .about-btn{
+  background-color: #b91c1c; /* red 700*/
+}
+.dark .about-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+  }
+}

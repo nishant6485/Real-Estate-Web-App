@@ -1,0 +1,116 @@
+.popularareas-container .dark {
+  background-color: black;
+}
+.popularareas-container .light {
+  background-color: transparent;
+}
+.popularareas-section .dark {
+  background-color: #1f2937;
+}
+.popularareas-section .light {
+  background-color: #fee2e2;
+}
+.popularareas-section {
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  background-color: #fef2f2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1.5rem;
+  gap: 5rem;
+}
+.popularareas-container.dark .popularareas-section {
+  background-color: #1f2937;
+}
+.popularareas-container.light .popularareas-section {
+  background-color: #fee2e2;
+}
+.popularareas-superset {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.popularareas-title {
+  color: red;
+}
+.popularareas-container.dark .popularareas-title {
+  color: white;
+}
+.popularareas-heading {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.popularareas-container.dark .popularareas-heading {
+  color: white;
+}
+
+.popularareas-content {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.popular-areas-card {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+}
+.popular-areas-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.popular-areas-bottom-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  color: gray;
+}
+.popular-areas-bottom-heading {
+  color: black;
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+.popularareas-container.dark .popular-areas-bottom-heading {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .popularareas-section {
+    width: 90%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .popularareas-superset {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .popularareas-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .popular-areas-bottom {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .popular-areas-bottom-item {
+    align-items: center;
+  }
+}

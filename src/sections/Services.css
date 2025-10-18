@@ -1,0 +1,133 @@
+.dark-mode {
+  background-color: black;
+}
+.light-mode {
+  background-color: transparent;
+}
+.main-container {
+  padding-bottom: 5rem;
+}
+.services-dark {
+  background-color: #1f2937;
+}
+.services-light {
+  background-color: #fee2e2;
+}
+.services {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  border: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 1.5rem;
+  gap: 2.5rem;
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.services-title {
+  color: #ef4444;
+}
+.services-dark .services-title {
+  color: white;
+}
+.services-heading {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.services-dark .services-heading {
+  color: white;
+}
+.services-outer-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.services-box {
+  background-color: white;
+  height: 350px;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 5px solid #dc2626;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.services-box:hover {
+  background-color: #fca5a5;
+}
+.services-dark .services-box {
+  background-color: black;
+}
+.services-inner-box {
+  padding: 1.25rem;
+  border-radius: 9999px;
+  background-color: #fecaca;
+}
+.services-icon-container {
+  color: #dc2626;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.services-icon-container:hover {
+  transform: scale(1.1);
+}
+.services-inner-title {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}
+.services-dark .services-inner-title {
+  color: white;
+}
+.services-inner-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #374151;
+}
+.services-dark .services-inner-paragraph {
+  color: white;
+}
+.box-inner-btn {
+  border: none;
+  border-bottom: 2px solid #dc2626;
+  color: #dc2626;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+}
+.box-inner-btn:hover {
+  transform: scale(1.1);
+}
+.services-dark .box-inner-btn {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .services {
+    width: 95%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .services-outer-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

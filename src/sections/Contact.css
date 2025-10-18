@@ -1,0 +1,135 @@
+.dark-mode {
+  background-color: black;
+}
+.light-mode {
+  background-color: transparent;
+}
+.contact-main-container {
+  padding-bottom: 5rem;
+}
+.contact-dark {
+  background-color: #1f2937;
+}
+.contact-light {
+  background-color: #fee2e2;
+}
+.contact-outer-container {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  border-radius: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1.5rem;
+  gap: 2.5rem;
+}
+.contact-left-container {
+  background-color: white;
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 0.75rem;
+}
+.contact-dark .contact-left-container {
+  background-color: black;
+}
+.contact-left-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: black;
+  font-weight: 600;
+}
+.contact-dark .contact-left-heading {
+  color: white;
+}
+.contact-name {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+}
+.contact-btn {
+  background-color: #dc2626;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  border: none;
+}
+.contact-btn:hover {
+  background-color: black;
+}
+.contact-dark .contact-btn:hover {
+  background-color: #b91c1c;
+}
+.contact-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.contact-right-title {
+  color: #ef4444;
+}
+.contact-dark .contact-right-title {
+  color: white;
+}
+.contact-right-heading {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.contact-dark .contact-right-heading {
+  color: white;
+}
+.contact-us-btn {
+  background-color: #dc2626;
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  border: none;
+}
+.contact-us-btn:hover {
+  background-color: black;
+}
+.contact-dark .contact-us-btn:hover {
+  background-color: #b91c1c;
+}
+.contact-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.contact-dark .contact-paragraph {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .contact-outer-container {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+  .contact-right-container {
+    padding-left: 5rem;
+  }
+}

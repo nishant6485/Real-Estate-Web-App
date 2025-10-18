@@ -1,0 +1,186 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.hero-section {
+  width: 95%;
+  height: 600px;
+  margin: auto;
+  margin-top: 88px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1rem, 5vw, 4rem);
+  gap: 28px;
+  z-index: 20;
+  background-repeat: no-repeat;
+}
+
+.hero-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: clamp(2.5rem, 6vw, 4rem);
+  color: white;
+  font-weight: 600;
+  padding-right: 0;
+}
+.hero-paragraph {
+  color: white;
+  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+  padding-right: 0;
+  line-height: 1.6rem;
+  
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background-color: transparent;
+  color: black;
+}
+.form-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: -56px;
+  z-index: 10;
+}
+.dark .form-container {
+  background-color: gray;
+}
+.light .form-container {
+  background-color: white;
+}
+
+.location-container {
+  width: 100%;
+}
+.location-title {
+  color: black;
+  font-weight: 600;
+}
+.dark .location-title {
+  color: white;
+}
+.location-input {
+  background-color: white;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #c9c7c1;
+}
+
+.type-title {
+  color: black;
+  font-weight: 600;
+}
+.dark .type-title {
+  color: white;
+}
+.type-select {
+  background-color: white;
+  padding: 0.5rem;
+  border-bottom: 1px solid #c9c7c1;
+  border: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  color: gray;
+  font-size: 1rem;
+}
+
+.category-title {
+  color: black;
+  font-weight: 600;
+}
+.dark .category-title {
+  color: white;
+}
+.category-select {
+  background-color: white;
+  padding: 0.5rem;
+  border-bottom: 1px solid #c9c7c1;
+  border: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  color: gray;
+  font-size: 1rem;
+}
+.hero-btn{
+  width: 100%;
+}
+.hero-submit{
+  width: 100%;
+  background-color: #dc2626;   /*red 600*/
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s ease, background-color .3s ease, color .3s ease;
+}
+.hero-submit:hover{
+  background-color: black;
+  transform: scale(1.1);
+}
+.dark .hero-submit{
+  background-color: #b91c1c; /* red 700*/
+}
+.dark .hero-submit:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 0 112px;
+  }
+  .hero-heading {
+    padding-right: 25rem;
+    line-height: 4rem;
+    font-size: 3.5rem;
+  }
+  .hero-paragraph {
+    padding-right: 25rem;
+    font-size: 1.75rem;
+  }
+  .form-container {
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero-section{
+    margin-top: 105px;
+  }
+}

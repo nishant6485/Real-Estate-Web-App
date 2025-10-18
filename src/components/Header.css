@@ -1,0 +1,159 @@
+.nav-dark {
+  background-color: black;
+}
+.nav-light {
+  background-color: #f3f3f3;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.nav-logo-img {
+  width: 120px;
+}
+.nav-dark .nav-logo-img {
+  filter: invert(1);
+}
+.nav-items {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  display: none;
+}
+.nav-link {
+  color: black;
+  font-size: 15px;
+  font-family: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.nav-link:hover {
+  background-color: #dc2626;
+  color: white;
+}
+.nav-dark .nav-link {
+  color: white;
+}
+.mobile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.nav-dark .mobile-menu {
+  color: white;
+}
+.menu-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #1e293b;
+
+  position: absolute;
+  top: 80px;
+  left: 0;
+  justify-content: center;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+  padding: 1rem 0;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.menu-dropdown {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.menu-dropdown:hover {
+  background-color: #dc2626;
+  color: black;
+}
+.phone-cotainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.phone-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.phone-icon {
+  color: #dc2626;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.phone-number {
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.nav-dark .phone-number {
+  color: white;
+}
+.phone-userCircle {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .nav-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .nav-logo-img {
+    width: 150px;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .mobile-icon {
+    display: none;
+  }
+  .phone-cotainer {
+    gap: 2rem;
+  }
+  .phone-logo {
+    gap: 0.75rem;
+  }
+  .phone-number {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .nav-light {
+    background-color: #e5e5e5;
+  }
+}
